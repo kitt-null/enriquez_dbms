@@ -1,0 +1,12 @@
+SELECT
+    CONCAT(lname, ", ", fname) AS Fullname,
+    SCHEDULE.session,
+    SCHEDULE.activity,
+    SCHEDULE.date,
+    SCHEDULE.time_start,
+    trainor.name
+FROM
+    clientmember
+INNER JOIN SCHEDULE ON clientmember.client_ID = SCHEDULE.client_ID
+INNER JOIN trainor ON SCHEDULE
+    .sched_ID = trainor.sched_ID

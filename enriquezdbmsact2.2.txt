@@ -1,0 +1,10 @@
+SELECT
+    CONCAT(lname, ", ", fname) AS Fullname,
+    reports.total_amount,
+    payment.amount,
+    membership.status
+FROM
+    clientmember
+INNER JOIN reports ON clientmember.client_ID = reports.client_ID
+INNER JOIN payment ON clientmember.client_ID = payment.client_ID
+INNER JOIN membership ON clientmember.client_ID = membership.client_ID

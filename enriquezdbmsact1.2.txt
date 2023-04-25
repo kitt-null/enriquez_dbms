@@ -1,0 +1,10 @@
+SELECT
+    CONCAT(lname, ", ", fname) AS Fullname,
+	membership.status,
+    reports.total_amount,
+    reports.total_amount - (reports.total_amount * 10 / 100) AS DISCOUNTED
+FROM
+    clientmember
+INNER JOIN SCHEDULE ON clientmember.client_ID = SCHEDULE.client_ID
+INNER JOIN membership ON clientmember.client_ID = membership.client_ID
+INNER JOIN reports ON clientmember.client_ID = reports.client_ID
