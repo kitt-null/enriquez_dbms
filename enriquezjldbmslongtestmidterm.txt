@@ -84,4 +84,17 @@ WHERE
     Major = 'ECE'AND
     HomeAddress = 'Malolos, Bulacan';
 
-
+USE
+    grading_system;
+SELECT
+    CONCAT(StudFname, ' ', StudLname) AS Fullname,
+    Major,
+    grade.SubjectCode,
+    grade.Grade
+FROM
+    student
+INNER JOIN grade ON student.StudNo = grade.StudNo
+inner JOIN subject on grade.SubjectCode = subject.SubjectCode
+WHERE
+subject.SubjectCode = 'Math 122' AND
+    grade.Grade <= 2.0;
