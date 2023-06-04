@@ -23,54 +23,25 @@ CREATE TABLE STUDENT(
 USE
     grading_system;
 INSERT INTO student
-VALUES(
-    'S-101',
-    'Ana',
-    'Cruz',
-    'ECE',
-    'Female',
-    'Malolos, Bulacan'
-),(
-    'S-102',
-    'Hazel',
-    'Ponce',
-    'COE',
-    'Female',
-    'Plaridel, Bulacan'
-),(
-    'S-103',
-    'Cristov',
-    'Concio',
-    'ECE',
-    'Male',
-    'Malolos, Bulacan'
-),(
-    'S-104',
-    'Aris',
-    'Clavio',
-    'COE',
-    'Male',
-    'Pulilan, Bulacan'
-),(
-    'S-105',
-    'Honey',
-    'Pelayo',
-    'COE',
-    'Female',
-    'Plaridel, Bulacan'
-),(
-    'S-106',
-    'Carrie',
-    'Abao',
-    'ECE',
-    'Female',
-    'Pulilan, Bulacan'
-);
+VALUES('S-101','Ana','Cruz','ECE','Female','Malolos, Bulacan'),
+('S-102','Hazel','Ponce','COE','Female','Plaridel, Bulacan'),
+('S-103','Cristov','Concio','ECE','Male','Malolos, Bulacan'),
+('S-104','Aris','Clavio','COE','Male','Pulilan, Bulacan'),
+('S-105','Honey','Pelayo','COE','Female','Plaridel, Bulacan'),
+('S-106','Carrie','Abao','ECE','Female','Pulilan, Bulacan');
+
 INSERT INTO SUBJECT
 VALUES('Chem 123', 'Chemistry'),('Math 122', 'Trigonometry'),('Math 123', 'Algebra');
 INSERT INTO grade
-VALUES('S-101', 'Chem 123', 2.00),('S-101', 'Math 122', 1.00),('S-101', 'Math 123', 1.50),('S-102', 'Chem 123', 1.75),('S-102', 'Math 122', 1.25),('S-102', 'Math 123', 1.50),('S-103', 'Chem 123', 2.00),('S-103', 'Math 122', 1.75),('S-103', 'Math 123', 1.25),('S-104', 'Chem 123', 1.25),('S-104', 'Math 122', 2.25),('S-104', 'Math 123', 2.50),('S-105', 'Chem 123', 1.00),('S-105', 'Math 122', 1.25),('S-105', 'Math 123', 2.50),('S-106', 'Chem 123', 1.25),('S-106', 'Math 122', 1.50),('S-106', 'Math 123', 1.75);
-
+VALUES('S-101', 'Chem 123', 2.00),('S-101', 'Math 122', 1.00),
+('S-101', 'Math 123', 1.50),('S-102', 'Chem 123', 1.75),
+('S-102', 'Math 122', 1.25),('S-102', 'Math 123', 1.50),
+('S-103', 'Chem 123', 2.00),('S-103', 'Math 122', 1.75),
+('S-103', 'Math 123', 1.25),('S-104', 'Chem 123', 1.25),
+('S-104', 'Math 122', 2.25),('S-104', 'Math 123', 2.50),
+('S-105', 'Chem 123', 1.00),('S-105', 'Math 122', 1.25),
+('S-105', 'Math 123', 2.50),('S-106', 'Chem 123', 1.25),
+('S-106', 'Math 122', 1.50),('S-106', 'Math 123', 1.75);
 
 USE
     grading_system;
